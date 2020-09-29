@@ -45,6 +45,12 @@ Vc = 40(0.3632) – (45/e0.03*4/12)0.2810
      
 
 COMPUTER SCIENCE
+a. Recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem. It calls itself over and over again until a base condition is met that breaks the loop.  Recursion solves recursive problems by using functions that call themselves from within their own code. 
+However, recursion can be inefficient because:
+	•	Recursion uses more memory, because the function has to add to the stack with each recursive call and keep the values there until the call is finished, which makes it use more memory as opposed to the iterative process
+	•	Recursion can also be slow.
+
+
 
 
 
@@ -88,59 +94,59 @@ COMPUTER SCIENCE
 
 MATHS
 
-y = sqrt((x+6)2 + 25) + sqrt((x-6)2 + 121
+y = sqrt((x+6)^2 + 25) + sqrt((x-6)^2 + 121)
 Using chain rule on both terms separately:
 The first term can be re-written as follows:
-Y = ((x+6)2 + 25)^1/2
-      Let u = (x+6)2 +25
-              du/dx = d/dx((x+6)2 + 25)
-            y = U1/2
-            dy/du = ½ U-1/2
-                                  = 1/2U1/2
+Y = ((x+6)^2 + 25)^1/2
+      Let u = (x+6)^2 + 25
+              du/dx = d/dx((x+6)^2 + 25)
+            y = U^1/2
+            dy/du = ½ U^-1/2
+                  = 1/2U^1/2
          Therefore, following the rule
-	=1/2 ((x+6)2 +25)1/2 * d/dx((x+6)2 + 25)
-	=(d/dx((x+6)2) + d/dx (25))/2√((x+6)2+25)
-	= (2(x+6) + 0)/ 2√((x+6)2+25)
+	=1/2 ((x+6)^2 +25)^1/2 * d/dx((x+6)^2 + 25)
+	=(d/dx((x+6)^2) + d/dx (25))/2√((x+6)^2+25)
+	= (2(x+6) + 0)/ 2√((x+6)^2+25)
 	Dividing numerator by denominator
-	= (x + 6)/ √((x+6)2+25)
+	= (x + 6)/ √((x+6)^2+25)
 The second term can be re-written as follows:
-Y = ((x-6)2 + 121)1/2
-      Let u = (x-6)2 +121
-              du/dx = d/dx((x-6)2 +121)
-            y = U1/2
-            dy/du = ½ U-1/2
-                                  = 1/2U1/2
+Y = ((x-6)^2 + 121)^1/2
+      Let u = (x-6)^2 +121
+              du/dx = d/dx((x-6)^2 +121)
+            y = U^1/2
+            dy/du = ½ U^-1/2
+                  = 1/2U^1/2
          Therefore, following the rule
-	=1/2 ((x-6)2 +121)1/2 * d/dx((x-6)2 + 121)
-	=(d/dx((x-6)2) + d/dx (121))/2√((x-6)2+121)
-	= (2(x-6) * d/dx(x-6) + 0)/ 2√((x+6)2+121)
+	=1/2 ((x-6)^2 +121)^1/2 * d/dx((x-6)^2 + 121)
+	=(d/dx((x-6)^2) + d/dx (121))/2√((x-6)^2+121)
+	= (2(x-6) * d/dx(x-6) + 0)/ 2√((x+6)^2+121)
 	Dividing numerator by denominator
-	= ((x - 6)*d/dx(x-6))/√((x-6)2+121)
-	= (d/dx(x) – d/dx(6) * (x-6)) / √((x-6)2+121)
-	= ((1-0) * (x -6))/√((x-6)2+121)
-	= x-6/ √((x-6)2+121).
+	= ((x - 6)*d/dx(x-6))/√((x-6)^2+121)
+	= (d/dx(x) – d/dx(6) * (x-6)) / √((x-6)^2+121)
+	= ((1-0) * (x -6))/√((x-6)^2+121)
+	= x-6/ √((x-6)^2+121).
 Therefore, bringing the result of both terms together we have:
-dy/dx = (x + 6)/ √((x+6)2+25) + (x-6)/ √((x-6)2+121)
+dy/dx = (x + 6)/ √((x+6)^2+25) + (x-6)/ √((x-6)^2+121)
 To get the minimum value, dy/dx should be set to zero (i.e dy/dx=0):
-(x + 6)/ √((x+6)2+25) + (x-6)/ √((x-6)2+121) = 0
+(x + 6)/ √((x+6)^2+25) + (x-6)/ √((x-6)^2+121) = 0
 Rearranging (note the effect of the rearrangement on the rhs):
- (x + 6)/ √((x+6)2+25) = (6-x)/ √((x-6)2+121)
+ (x + 6)/ √((x+6)^2+25) = (6-x)/ √((x-6)^2+121)
 Take squares to eliminate roots:
- (x + 6)2/ ((x+6)2+25) = (6-x)2/((x-6)2+121)
+ (x + 6)^2/ ((x+6)^2+25) = (6-x)^2/((x-6)^2+121)
 Expanding:
  (x+6)(x+6) / (x+6)(x+6) + 25 = (6-x)(6-x) / (x-6)(x-6) + 121
- x2 + 6x + 6x + 36 / x2 + 6x +6x +36 +25 = 36 -6x-6x+x2/x2-6x-6x+36+121
-x2+12x+36 / x2+12x¬+61 = x2 -12x+36 / x2-12x+157
+ x^2 + 6x + 6x + 36 / x^2 + 6x +6x +36 +25 = 36 -6x-6x+x^2/x^2-6x-6x+36+121
+x^2+12x+36 / x^2+12x¬+61 = x^2 -12x+36 / x^2-12x+157
 Cross Multiplying:
-x2+12x+36(x2-12x+157) = x2+12x+61(x2-12x+36)
-x4-12x3+157x2+12x3-144x2+1884x+36x2-432x+5652=x4-12x3+36x2+12x3-144x2+432x+61x2-732x+2196
+x^2+12x+36(x^2-12x+157) = x^2+12x+61(x^2-12x+36)
+x^4-12x^3+157x^2+12x^3-144x^2+1884x+36x^2-432x+5652=x^4-12x^3+36x^2+12x^3-144x^2+432x+61x^2-732x+2196
 Simplifying,
-x4+49x2+1452x+5652 = x4-47x2-300x+2196
+x^4+49x^2+1452x+5652 = x^4-47x^2-300x+2196
 collect like terms
-x4+49x2+1452x+5652 – (x4-47x2-300x+2196) = 0
-x4+49x2+1452x+5652-x4+47x2+300x-2196=0
+x^4+49x^2+1452x+5652 – (x^4-47x^2-300x+2196) = 0
+x^4+49x^2+1452x+5652-x^4+47x^2+300x-2196=0
 Simplify
-96x2+1752x+3456=0
+96x^2+1752x+3456=0
 Solving quadratically with the aid of a calculator we have,
 24(4x+9) = 0	or 	x+16=0
 4x+9=0		x = -16
@@ -148,18 +154,18 @@ Solving quadratically with the aid of a calculator we have,
 x = -2.25
 
 Substituting the values for x in the equation for y
-y = sqrt((x+6)¬¬¬¬¬¬¬¬¬¬2 + 25) + sqrt((x-6)2 + 121)
+y = sqrt((x+6)^2 + 25) + sqrt((x-6)^2 + 121)
 
 When x = -2.25			
-y = sqrt ((-2.25+6)¬¬¬¬¬¬¬¬¬¬2 + 25) + sqrt ((-2.25-6)2 + 121)   	    	
-   = sqrt ((3.75)2+25) + sqrt ((-8.25)2+121)
+y = sqrt ((-2.25+6)^2 + 25) + sqrt ((-2.25-6)^2 + 121)   	    	
+   = sqrt ((3.75)^2+25) + sqrt ((-8.25)^2+121)
    = sqrt (39.0625) + sqrt (189.0625)
    = 6.25 + 13.75
    = 20.
 or					
 when x = -16
-y = sqrt ((-16+6)¬¬¬¬¬¬¬¬¬¬2 + 25) + sqrt ((-16-6)2 +121)
-   = sqrt ((-10)2+25) + sqrt ((-22)2+121)
+y = sqrt ((-16+6)^2 + 25) + sqrt ((-16-6)^2 +121)
+   = sqrt ((-10)^2+25) + sqrt ((-22)^2+121)
    = sqrt (125) + sqrt (608)
    = 11.18 + 24.5967
    = 35.78
