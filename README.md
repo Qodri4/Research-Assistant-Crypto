@@ -49,6 +49,57 @@ a. Recursion is a method of solving a problem where the solution depends on solu
 However, recursion can be inefficient because:
 	•	Recursion uses more memory, because the function has to add to the stack with each recursive call and keep the values there until the call is finished, which makes it use more memory as opposed to the iterative process
 	•	Recursion can also be slow.
+	
+	
+	
+	
+	
+b. PYTHON
+
+   import math as mt
+   prime = [0 for i in range(1000000)] 
+  
+# Calculate all primes upto n. 
+def SieveOfEratosthenes(n): 
+    for i in range(1, n + 2): 
+        prime[i] = True
+  
+    prime[1] = False
+  
+    for p in range(2, mt.ceil(n**(0.5))): 
+        if (prime[p] == True): 
+             for i in range(p * p, n + 1, p): 
+                prime[i] = False
+  def ispoweroftwo(n):
+    return (n and (n & (n-1))==False)
+  def isprothnum(n):
+    k = 1
+    while(k<(n//k)):
+        if (ispoweroftwo(n//k)):
+            return True
+        k = k + 2
+            
+    return False
+  def isprothprime(n):
+    if(isprothnum(n-1)):
+        if (prime[n]):
+            return True
+        else:
+            return False
+    else:
+        return False
+  n = 41
+  
+# if number is proth number, 
+# calculate primes upto n 
+SieveOfEratosthenes(n) 
+  
+for i in range(1, n + 1): 
+      
+    # Check n for Proth Prime 
+    if isprothprime(i) == True: 
+        print(i,'is proth prime') 
+
 
 
 
