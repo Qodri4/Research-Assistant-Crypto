@@ -12,4 +12,34 @@ Bitcoin is a similar resource to Gold and silver. It’s scarce, relatively cost
 This model however, comes with deficiencies both in theoretical proposition and its empirical foundation. Theoretically, the model assumes that the USD market capitalization of a monetary good is derived directly from their new rate of supply. No evidence or research has been provided to support this idea. This idea is also not applicable when applied to long run analysis or prediction of bitcoin worth.
 In conclusion, the stock to flow metric says nothing about how market participants value commodities. Many cryptocurrencies which utilize Bitcoin’s code have the exact same supply schedule as Bitcoin and it is evident that their stock to flow values have nothing to do with their future (or current) valuation.  Therefore, we are left with a hypothesis that applies to no economic assets except bitcoin.
 
-b. Stock price(P
+b. YARA INC		
+Stock price(Po)=$40 
+Strike/Exercise price = $45
+Time to expiration= 4 months(4/12)
+Volatility = 40% 
+Risk free rate = 3%   
+Call price ( Vc )= Po Nd1  - (x/ekrf * t)Nd2
+ d1 = [ln[Po/x] + (KRF+ .05σ2)t]/ σ√t
+ d2 = d1 - σ√t
+Therefore,
+d1 = (ln(40/45) + [0.03 + 0.5(0.40)2]*4/12)/0.40 * √4/12
+    = (0.11778 + [0.03 + 0.08]0.33333)/0.40 * 0.57735
+    = (-0.11778 + 0.0366663)/0.23094
+    = -0.0811137/0.23094
+    = -0.35
+d1 = -0.35. 
+Checking the corresponding value on the standard normal table:
+Nd1= 0.3632
+
+d2 = -0.35123 – 0.40√4/12
+    = -0.35123 – 0.23094
+    = -0.58
+Checking the corresponding value on the standard normal table:
+Nd2= 0.2810
+To calculate the call price:
+Vc = 40(0.3632) – (45/e0.03*4/12)0.2810
+     = 14.528 – (45/1.010050)0.2810
+     = 14.528 – 12.51918
+     = 2.0088
+     Therefore, call price is $2.
+
